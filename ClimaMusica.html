@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="EstiloClimaMusica.css">
+    <title>Clima e Musica</title>
+</head>
+
+<body>
+<!-- 
+    
+    0de7138ad69351ba0c79c8c9426e8a32
+
+-->
+<div class="background">
+    <img src="Imagens/sky-rain.jpg" id="bg-img">
+</div>
+    <div class="container">
+       
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Coloque seu país">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+        
+        <div class="not-found">
+            <img src="Imagens/404.png">
+            <p>Opa! Local Invalido :/</p>
+        </div>
+    
+        
+        <div class="weather-box">
+            <img src="">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+    <div class="containerMusic">
+        <div class="player-img">
+            <img src="p - Copia.png" class="active" id="cover" width="170" height="170">
+        </div>
+
+        <h2 id="music-title">testtitle</h2>
+        <h3 id="music-artist">testArtist</h3>
+        <br>
+        <div class="player-progress" id="player-progress">
+            <div class="progress" id="progress"></div>
+            <div class="music-duration">
+                <span id="current-time">0:00</span>
+            </div>
+        </div>
+        <br>
+        <div class="player-controls">
+            <i class="fa-solid fa-backward" title="Previous" id="prev"></i>
+            <i class="fa-solid fa-play play-button" title="Play" id="play"></i>
+            <i class="fa-solid fa-forward" title="Next" id="next"></i>
+        </div>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="ClimaMusica.js"></script>
+    <script src="MusicaJS.js"></script>
+
+</body>
+
+</html>
